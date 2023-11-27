@@ -14,8 +14,6 @@ export default class game {
 
     for (let frameIndex = 0; frameIndex < 10; frameIndex++) {
 
-      
-
       if (this.isStrike(rollIndex)) {
         score += this.strikeBonus(rollIndex);
         rollIndex++;
