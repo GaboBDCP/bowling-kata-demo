@@ -65,10 +65,11 @@ Note: coverage is also included in watch mode.
 
 (When scoring “X” indicates a strike, “/” indicates a spare, “-” indicates a miss)
 
-- 0 0 0 0 0 0 0 0 0 0 0 0 (12 rolls: 0 pins) = 10 frames * 0 points = 0
-- X X X X X X X X X X X X (12 rolls: 12 strikes) = 10 frames * 30 points = 300
-- 9- 9- 9- 9- 9- 9- 9- 9- 9- 9- (20 rolls: 10 pairs of 9 and miss) = 10 frames * 9 points = 90
+- -- -- -- -- -- -- -- -- -- -- (10 rolls: 0 pins) = 10 frames * 0 points = 0
+- 1- 1- 1- 1- 1- 1- 1- 1- 1- 1- (20 rolls: 10 pairs of 1 and miss) = 10 frames * 2 points = 20
+- 5/ 3- -- -- -- -- -- -- -- -- (20 rolls: 1 spare, 3 pins and then all 0) = 16
 - 5/ 5/ 5/ 5/ 5/ 5/ 5/ 5/ 5/ 5/5 (21 rolls: 10 pairs of 5 and spare, with a final 5) = 10 frames * 15 points = 150
+- X X X X X X X X X X X X (12 rolls: 12 strikes) = 10 frames * 30 points = 300
 
 
 ### More info on the rules at:
