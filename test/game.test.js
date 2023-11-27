@@ -33,3 +33,11 @@ test('It should return the correct score when a spare is rolled', () => {
   rollMany(0, 17);  
   expect(testGame.score()).toBe(16);
 });
+
+test('It should return the correct score when a strike is rolled', () => {
+  testGame.roll(10); //strike
+  testGame.roll(1);
+  testGame.roll(1);
+  rollMany(0, 17);  
+  expect(testGame.score()).toBe(14);
+});
