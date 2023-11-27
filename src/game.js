@@ -16,8 +16,8 @@ export default class game {
 
       
 
-      if (this.rolls[rollIndex] === 10) {
-        score += 10 + this.rolls[rollIndex + 1] + this.rolls[rollIndex + 2];
+      if (this.isStrike(rollIndex)) {
+        score += this.strikeBonus(rollIndex);
         rollIndex++;
         continue;
       }
@@ -44,6 +44,14 @@ export default class game {
 
   spareBonus(rollIndex) {
     return 10 + this.rolls[rollIndex + 2];
+  }
+
+  isStrike(rollIndex) {
+    return this.rolls[rollIndex] === 10;
+  }
+
+  strikeBonus(rollIndex) {
+    return 10 + this.rolls[rollIndex + 1] + this.rolls[rollIndex + 2];
   }
 
   
