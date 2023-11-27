@@ -16,8 +16,8 @@ export default class game {
 
       const frameScore = this.rolls[rollIndex] + this.rolls[rollIndex + 1];
 
-      if(frameScore === 10) {
-        score += frameScore + this.rolls[rollIndex + 2];
+      if(this.isSpare(frameScore)) {
+        score += this.spareBonus(rollIndex);
         
       }else  {
         score += frameScore;
@@ -30,6 +30,13 @@ export default class game {
     return score;
   }
 
-  
+  isSpare(frameScore) {
+    return frameScore === 10;
+  }
+
+  spareBonus(rollIndex) {
+    return 10 + this.rolls[rollIndex + 2];
+  }
+
   
 }
